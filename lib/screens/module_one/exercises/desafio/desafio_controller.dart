@@ -9,11 +9,19 @@ class DesafioController extends GetxController {
     //já que a cada cigarro perde 10 minutos de vida, transformamos os horas em minutos,
     //O dia tem 24 horas, 24 horas em minutos = 1440 minutos,
     //multiplica-se cigarros por 10 minutos,
-    int cigarros = anosCtrl.text.isEmpty ? 0 : int.parse(cigarrosCtrl.text);
-    double anos = anosCtrl.text.isEmpty ? 0 : double.parse(anosCtrl.text);
-    //Conversões
-    double minutosPerdidos = anos * 365 * cigarros * 10;
-    double diasPerdidos = minutosPerdidos / (24 * 60);
+    int cigarrosPordia =
+        anosCtrl.text.isEmpty ? 0 : int.parse(cigarrosCtrl.text);
+    double anosFumando =
+        anosCtrl.text.isEmpty ? 0 : double.parse(anosCtrl.text);
+    //Converter anos em dias
+    double diasFumando = anosFumando * 365;
+    //----------
+    double cigarrosFumado = cigarrosPordia * diasFumando;
+    double minutosPerdidos = cigarrosFumado * 10;
+    //Converter horas em minutos
+    double horasEmMinuto = 24 * 60;
+
+    double diasPerdidos = minutosPerdidos / horasEmMinuto;
 
     Get.snackbar(
       'Dias Perdidos',
