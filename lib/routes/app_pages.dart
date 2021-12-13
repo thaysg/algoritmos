@@ -30,6 +30,24 @@ import 'package:algoritmos/screens/module_one/exercises/nex_and_previously/nex_a
 import 'package:algoritmos/screens/module_one/exercises/nex_and_previously/nex_and_previously_page.dart';
 import 'package:algoritmos/screens/module_one/module_one_bindings.dart';
 import 'package:algoritmos/screens/module_one/module_one_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/alistamento/alistamento_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/alistamento/alistamento_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/bissexto/bissexto_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/bissexto/bissexto_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/desafio_dois/desafio_dois_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/desafio_dois/desafio_dois_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/distancia/distancia_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/distancia/distancia_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/par_impar/par_impar_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/par_impar/par_impar_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/promotion/promotion_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/promotion/promotion_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/velocidade/velocidade_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/velocidade/velocidade_page.dart';
+import 'package:algoritmos/screens/module_two/exercises/votar/votar_bindings.dart';
+import 'package:algoritmos/screens/module_two/exercises/votar/votar_page.dart';
+import 'package:algoritmos/screens/module_two/module_two_bindings.dart';
+import 'package:algoritmos/screens/module_two/module_two_page.dart';
 import 'package:get/get.dart';
 part 'app_routes.dart';
 
@@ -118,6 +136,51 @@ class AppPages {
       name: _Paths.name,
       page: () => const NamePage(),
       binding: NameBindings(),
+    ),
+    GetPage(
+      name: _Paths.modTwo,
+      page: () => const ModuleTwoPage(),
+      binding: ModuleTwoBindings(),
+    ),
+    GetPage(
+      name: _Paths.vel,
+      page: () => const VelocidadePage(),
+      binding: VelocidadeBindings(),
+    ),
+    GetPage(
+      name: _Paths.voto,
+      page: () => const VotarPage(),
+      binding: VotarBindings(),
+    ),
+    GetPage(
+      name: _Paths.alist,
+      page: () => const AlistamentoPage(),
+      binding: AlistamentoBindings(),
+    ),
+    GetPage(
+      name: _Paths.prom,
+      page: () => const PromotionPage(),
+      binding: PromotionBindings(),
+    ),
+    GetPage(
+      name: _Paths.dist,
+      page: () => const DistanciaPage(),
+      binding: DistanciaBindings(),
+    ),
+    GetPage(
+      name: _Paths.desf2,
+      page: () => const DesafioDoisPage(),
+      binding: DesafioDoisBindings(),
+    ),
+    GetPage(
+      name: _Paths.parI,
+      page: () => const ParImparPage(),
+      binding: ParImparBindings(),
+    ),
+    GetPage(
+      name: _Paths.bis,
+      page: () => const BissextoPage(),
+      binding: BissextoBindings(),
     ),
   ];
 }

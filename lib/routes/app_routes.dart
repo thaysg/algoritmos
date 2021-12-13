@@ -18,6 +18,15 @@ abstract class Routes {
   static const sub = _Paths.sub;
   static const sum = _Paths.sum;
   static const modOne = _Paths.modOne;
+  static const modTwo = _Paths.modTwo;
+  static const vel = _Paths.vel;
+  static const voto = _Paths.voto;
+  static const parI = _Paths.parI;
+  static const bis = _Paths.bis;
+  static const alist = _Paths.alist;
+  static const prom = _Paths.prom;
+  static const dist = _Paths.dist;
+  static const desf2 = _Paths.desf2;
 }
 
 abstract class _Paths {
@@ -37,4 +46,13 @@ abstract class _Paths {
   static const sum = '/sum';
   static const area = '/area';
   static const modOne = '/modOne';
+  static const modTwo = '/modTwo';
+  static const vel = '/vel';
+  static const voto = '/voto';
+  static const parI = '/parI';
+  static const bis = '/bis';
+  static const alist = '/alist';
+  static const prom = '/prom';
+  static const dist = '/dist';
+  static const desf2 = '/desf2';
 }
