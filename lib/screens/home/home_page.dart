@@ -26,6 +26,14 @@ class HomePage extends GetView<HomeController> {
                 );
               },
             ),
+            ContainerModule(
+              title: 'Module 2 \n Condições Básicas',
+              onTap: () {
+                Get.toNamed(
+                  Routes.modTwo,
+                );
+              },
+            ),
           ],
         ),
       ),
