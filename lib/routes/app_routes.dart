@@ -18,6 +18,7 @@ abstract class Routes {
   static const sub = _Paths.sub;
   static const sum = _Paths.sum;
   static const modOne = _Paths.modOne;
+  static const desafio1 = _Paths.desafio1;
 }
 
 abstract class _Paths {
@@ -37,4 +38,5 @@ abstract class _Paths {
   static const sum = '/sum';
   static const area = '/area';
   static const modOne = '/modOne';
+  static const desafio1 = '/desafio1';
 }

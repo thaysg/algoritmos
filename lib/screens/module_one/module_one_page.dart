@@ -60,6 +60,12 @@ class ModuleOnePage extends GetView<ModuleOneController> {
               ),
             ],
           ),
+          MyContainer(
+            onPressed: () {
+              Get.toNamed(Routes.desafio1);
+            },
+            text: 'Desafio',
+          ),
         ],
       ),
     );
