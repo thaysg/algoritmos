@@ -16,12 +16,14 @@ class DesafioController extends GetxController {
     //Converter anos em dias
     double diasFumando = anosFumando * 365;
     //----------
-    double cigarrosFumado = cigarrosPordia * diasFumando;
-    double minutosPerdidos = cigarrosFumado * 10;
+    /* double cigarrosFumado = cigarrosPordia * diasFumando;
+    double minutosPerdidos = cigarrosFumado * 10; */
+    double minutosPerdidos = cigarrosPordia * 10;
+    double cigarrosFumado = minutosPerdidos * diasFumando;
     //Converter horas em minutos
     double horasEmMinuto = 24 * 60;
 
-    double diasPerdidos = minutosPerdidos / horasEmMinuto;
+    double diasPerdidos = cigarrosFumado / horasEmMinuto;
 
     Get.snackbar(
       'Dias Perdidos',
