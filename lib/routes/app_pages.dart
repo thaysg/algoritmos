@@ -1,5 +1,7 @@
 import 'package:algoritmos/screens/home/home_bindings.dart';
 import 'package:algoritmos/screens/home/home_page.dart';
+import 'package:algoritmos/screens/module_one/exercises/desafio/desafio_bindings.dart';
+import 'package:algoritmos/screens/module_one/exercises/desafio/desafio_page.dart';
 import 'package:algoritmos/screens/module_one/exercises/math/area/area_bindings.dart';
 import 'package:algoritmos/screens/module_one/exercises/math/area/area_page.dart';
 import 'package:algoritmos/screens/module_one/exercises/math/bhaskara/bhaskara_bindings.dart';
@@ -118,6 +120,11 @@ class AppPages {
       name: _Paths.name,
       page: () => const NamePage(),
       binding: NameBindings(),
+    ),
+    GetPage(
+      name: _Paths.desafio1,
+      page: () => const DesafioPage(),
+      binding: DesafioBindings(),
     ),
   ];
 }
